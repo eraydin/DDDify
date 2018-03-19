@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Bus\Command.fs" />
+    <Compile Include="Bus\IHandles{T}.fs" />
+    <Compile Include="Bus\IMessage.fs" />
+    <Compile Include="Bus\Event.fs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Aggregates\" />
+    <Folder Include="Entities\" />
+    <Folder Include="Values\" />
+    <Folder Include="Uow\" />
+    <Folder Include="Repositories\" />
+  </ItemGroup>
+</Project>
